@@ -20,7 +20,7 @@
 
 Web 应用程序：可以提供浏览器访问的程序；
 
-这个统一的web资源会被放在同一个文件夹下，Web 应用程序 —&gt; Tomcat：服务器 一个 Web 应用由多部分组成（静态Web、动态Web）
+这个统一的w eb资源会被放在同一个文件夹下，Web 应用程序 —&gt; Tomcat：服务器 一个 Web 应用由多部分组成（静态Web、动态Web）
 
 - HTML，CSS，JavaScript 
 - JSP，Servlet 
