@@ -1,25 +1,6 @@
----
-layout:  post
-title:   【狂神说Java】JavaWeb入门到实战（学习笔记）
-date:   0-11-02 22:27:02 发布
-author:  'zhangtao'
-header-img: 'img/post-bg-2015.jpg'
-catalog:   false
-tags:
--Java基础
--java
--web
-
----
-
+[TOC]
 
 学习视频来自B站 **狂神说** JavaWeb视频：  [https://www.bilibili.com/video/BV12J411M7Sj?p=1](https://www.bilibili.com/video/BV12J411M7Sj?p=1)
-
-
-
-
-
-
 
 ## 1.1 前言
 
