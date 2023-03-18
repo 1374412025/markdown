@@ -12,7 +12,7 @@
 		运算器		控制器			（CPU）
 	
 
-![冯诺依曼](https://pic2.zhimg.com/v2-8b5b6ff186ebb7deef6905aa71c48261_r.jpg)
+![](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181547250.jpeg)
 
 ##计算机软件
 
@@ -86,7 +86,7 @@ JRE:	Java Runtime Environment		java运行环境，
 
 JVM:	Java virtual Machine(跨平台核心，java虚拟机)
 
-![psc (1208×505) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5hj1ooXiADjqIwX8AVEj3ryHsypaJeWaBsRDuyChwbfMxMFgjqGrgi1YCvFshi.t6Ji9ZUw2iasO4vAUjB2ni3U!/b&bo=uAT5AQAAAAADN1Y!&rf=viewer_4)
+![psc (1208×505) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549820.png)
 
 
 
@@ -117,11 +117,11 @@ JVM:	Java virtual Machine(跨平台核心，java虚拟机)
 
 **project structure中进行环境选择**
 
-![psc (745×350) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5lfl0xt7SMHORmPmZBqWAtRZA85mq0g03m9DnZKig5Fj4pVHe3eVM.VIm1us5LZhmMz8yUOLHKjc1plJrmYpLWc!/b&bo=6QJeAQAAAAADF4Y!&rf=viewer_4)
+![psc (745×350) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549985.png)
 
 project structure中的module可以设置资源文件夹
 
-![psc (1275×380) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5lfl0xt7SMHORmPmZBqWAtRA6DLMzX7iSJetW3QgmVvTbyWlAnpUTunNeWOHkd6DZ7meIC8O5lZ3GOpgpRSmmlw!/b&bo=.wR8AQAAAAADF7A!&rf=viewer_4)
+![psc (1275×380) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549830.png)
 
 
 
@@ -172,7 +172,7 @@ integrated development environment
 
 new project 选择empty project
 
-![psc (479×679) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5lfl0xt7SMHORmPmZBqWAtTZw2.D3BUoOczi8HjSmykYjCHXtdZe98hsIajanB7RdRBfIIF3OZqYXg6TMX4gr68!/b&bo=3wGnAgAAAAADF0k!&rf=viewer_4)
+![psc (479×679) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549415.png)
 
 然后右键文件夹，点击新建module
 project——module——src——package——class
@@ -240,13 +240,13 @@ ctrl+/ 	用单行注释方法注释多行
 
 ## 关键字
 
-![psc (1024×734) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5lfl0xt7SMHORmPmZBqWAtRs7U0V5EKLe9TJ4Whsyjhx1Edjn.QSlWIAROl7xr.4WF6NPvnt.aDW23YTv5AM4ec!/b&bo=AATeAgAAAAADB*o!&rf=viewer_4)
+![psc (1024×734) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549052.png)
 
 ## 标识符
 
 ==JAVA所有组成部分都需要名字，类名，变量名以及方法名都被称为标识符==
 
-![psc (1415×765) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5nH*jLI6O.T0dSCtDdGFvaWwFvzhImszFKXc.C*27m3u1lsdj0HXHAGmWZ1Z3I4gK0yRvyL1BzhlRSviET2uF4s!/b&bo=hwX9AgAAAAADB18!&rf=viewer_4)
+![psc (1415×765) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549537.png)
 
 类名：public class  Hello 								**Hello**就是类名
 public static void main（String[] args)  	  **main**就是方法名
@@ -288,7 +288,7 @@ bps即1bits per second
 整数：二进制0b 十进制 八进制0   十六进制0x		0x11=17
 浮点数：有精度限制，超过精度会有舍入误差，避免使用浮点数对比，使用Bigdecimal数学工具类	字符：Unicode表，(int)c1 强制数据类型转换	U0000~UFFFF  65536=2^16^	
 布尔：boolean flag = ture; if(flag) 
-转义：escape character![常见转义字符表](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0pvdXJXb24vaW1hZ2UvbWFzdGVyL0phdmElRTUlOUYlQkElRTclQTElODAlRTglQUYlQUQlRTYlQjMlOTUvJUU1JUI4JUI4JUU4JUE3JTgxJUU4JUJEJUFDJUU0JUI5JTg5JUU1JUFEJTk3JUU3JUFDJUE2JUU4JUExJUE4LnBuZw?x-oss-process=image/format,png)
+转义：escape character![常见转义字符表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549901.png)
 
 
 
@@ -350,7 +350,7 @@ type varName [=value] [{,varName[=value]}];
 	②局部变量存在于栈内存中，作用的范围结束，变量空间会自动释放。
 	③局部变量没有默认初始化值 
 
-![20151221224044459 (629×331) (csdn.net)](https://img-blog.csdn.net/20151221224044459?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+![20151221224044459 (629×331) (csdn.net)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549984.png)
 
 **常量constan**t：初始化initialize后不再改变；
 特殊的变量，后续不允许被改变
@@ -898,7 +898,7 @@ SparseArray
 - 可以被所有的线程共享
 
 
-![psc (1281×622) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5nH*jLI6O.T0dSCtDdGFvaU9ghBiH.YQucxNJJNsD3Uq2thmn3WK7FmQ1H*O.zl9jOjOdQx1l28.sJq4V.P5Pg0!/b&bo=AQVuAgAAAAADB0o!&rf=viewer_4)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181544878.png)
 
 
 
@@ -1318,7 +1318,7 @@ interface TestService{
 **检查性异常，运行时异常，错误**
 异常体系结构
 `java.lang.Throwable`作为所有异常的超类
-![psc (1191×740) (qpic.cn)](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5qqc8PKmtJbeBCCPwX.jdbzJhB*CPtaArf3LeCrFPgxVYtB*wDVEjnhU.1xLJq1kj.OsxD965mxOXMNZfSwMwqk!/b&bo=pwTkAqcE5AIBByA!&rf=viewer_4)
+![](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181546150.jpeg)
 
 捕获异常
 

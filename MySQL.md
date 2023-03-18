@@ -96,20 +96,20 @@ sqlyog可视化操作软件
 打开安装包，一直下一步(中途可以设置安装路径)
 运行程序，**选择语言，点击新建**
 
-<img src="https://img-blog.csdnimg.cn/20210201152450152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDgyMjc5,size_16,color_FFFFFF,t_70" alt="新建" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557896.png" alt="新建" style="zoom:80%;" />
 
 **然后启动服务**
-![启动服务](https://img-blog.csdnimg.cn/20210201152749230.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDgyMjc5,size_16,color_FFFFFF,t_70)
+![启动服务](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557715.png)
 
 **输入用户名和密码**
-![用户名](https://img-blog.csdnimg.cn/20210201153406346.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMDgyMjc5,size_16,color_FFFFFF,t_70)
+![用户名](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557011.png)
 
 **进入界面完成**
 
 ## 1.5、SQLyog使用
 
 ​	1、**创建数据库school**，右击左边目录创建数据库
-![创建数据库](http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5qCUDit.NXj.GHxH7sa5XB3uzyD0xYVsY3Xxfgg1zfIpZTk8T3ekIp11HFDTu6hzUPEN5LsBFOaq7JXHlBlVAjM!/b&bo=9AEeAQAAAAADB8g!&rf=viewer_4)
+![创建数据库](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557632.png)
 
 ```sql
 CREATE DATABASE `school`CHARACTER SET utf8 COLLATE utf8_general_ci; 
@@ -120,7 +120,7 @@ CREATE DATABASE `school`CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 > 字段：id，name，age
 
-<img src="http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5vV4y8HgVhl0PssTCLwSzJM93kEPeIoDrv9kkUrhkQ0Vb35zze9e5eaRr8mRcZt3TvGNciunV7piZNlCr2*rHUw!/b&bo=QwShAQAAAAADB8U!&rf=viewer_4" alt="创建表" style="zoom:100%;" />
+<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557429.png" alt="创建表" style="zoom:100%;" />
 
 ```sql
 CREATE TABLE `school`.`student` ( `id` INT(10) NOT NULL COMMENT '学员id', `name` VARCHAR(100) NOT NULL COMMENT '学员姓名', `age` INT(3) NOT NULL COMMENT '学员年龄', PRIMARY KEY (`id`) ) ENGINE=INNODB CHARSET=utf8 COLLATE=utf8_general_ci; 
@@ -128,7 +128,7 @@ CREATE TABLE `school`.`student` ( `id` INT(10) NOT NULL COMMENT '学员id', `nam
 
 3、 **查看表**
 目录右击表，打开表，可以直接在null处添加，添加后点击右侧工具栏刷新，保存修改
-<img src="http://m.qpic.cn/psc?/V51sMwIM2ofv2G2B7Riv0XVQh31yQw7M/ruAMsa53pVQWN7FLK88i5oi0UDkz6hqfVCX6*Qy63XxhwWbgFGFkvuZNt9QMZClROW0g9MogjzTnjuNqk6EToyXPOqy78hTK0AOX5XpxgAg!/b&bo=DgTBAQAAAAADF*g!&rf=viewer_4" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557492.png" style="zoom:80%;" />
 
 勾选后可以删掉
 
@@ -586,7 +586,7 @@ Data Query Language：数据库查询语言
 >select语法
 
 
-![img](https://img-blog.csdnimg.cn/20210518113925275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NTUzOQ==,size_16,color_FFFFFF,t_70)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557278.png)
 
 ## 4.2查询 SELECT
 
@@ -693,7 +693,7 @@ WHERE `studentresult`IN('59','58');
 
 ## 4.4、联表查询
 
-![联表](https://img-blog.csdnimg.cn/20210607113817795.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxMDY3MDQ3,size_16,color_FFFFFF,t_70)
+![联表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558772.png)
 
 |    操作    |                       描述                       |
 | :--------: | :----------------------------------------------: |
@@ -773,7 +773,7 @@ where s.studentno is not null;
 自己的表和自己的表连接，核心：拆成两个一模一样的表
 
 
-![img](https://img-blog.csdnimg.cn/20210518114549966.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NTUzOQ==,size_16,color_FFFFFF,t_70)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558895.png)
 
 父类
 
@@ -929,7 +929,7 @@ INSERT INTO `testmd5`  VALUES ('4',MD5('123456'),'xm')
 隔离性问题：
 
 
-![img](https://img-blog.csdnimg.cn/2021051811461978.png)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558024.png)
 
 >执行事务
 
@@ -1012,12 +1012,12 @@ CREATE INDEX id_app_user_name ON `app_user`(`name`)
 加入索引前
 
 
-![img](https://img-blog.csdnimg.cn/20210518114636582.png)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558108.png)
 
 加入索引后
 
 
-![img](https://img-blog.csdnimg.cn/20210518114645782.png)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558894.png)
 
 ## 7.3、索引原则
 
@@ -1148,7 +1148,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 前提：满足第一第二范式
 
 
-确保数据表的每一列数据都和主键直接相关，而不能见解相关 ![img](https://img-blog.csdnimg.cn/2021051811471539.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NTUzOQ==,size_16,color_FFFFFF,t_70)
+确保数据表的每一列数据都和主键直接相关，而不能见解相关 ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558125.png)
 
 # 10、
 
@@ -1159,7 +1159,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 ## 10.2、JDBC
 
 
-![img](https://img-blog.csdnimg.cn/20210518114730410.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzE0NTUzOQ==,size_16,color_FFFFFF,t_70)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558674.png)
 
 ## 10.3、第一个JDBC程序
 

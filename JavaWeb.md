@@ -33,7 +33,7 @@ Web 应用程序编写完毕后，若想提供给外界访问：需要一个服�
 ## 1.3动态 Web 的访问过程
 
 
-![img](https://img-blog.csdnimg.cn/20201029214103518.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![屏幕截图 2023-03-18 150538](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550235.png)
 
 浏览器发送 HTTP 请求，服务器 Tomcat 接收请求，Servlet 容器从磁盘加载 Servlet 程序处理请求 request ，处理结束返回 response。
 
@@ -50,7 +50,7 @@ JSP/Servlet：
 - 基于 Java 语言
 
 
-![img](https://img-blog.csdnimg.cn/20201029214824204.png#pic_center) Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目。
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550492.png) Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目。
 
 Tomcat 技术先进、性能稳定，而且**免费**。
 
@@ -61,14 +61,14 @@ Tomcat官网： [http://tomcat.apache.org/](http://tomcat.apache.org/)
 
 
 
-![img](https://img-blog.csdnimg.cn/20201029215004229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201029215256908.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550787.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550824.png)
 
 
 
-文件夹： ![img](https://img-blog.csdnimg.cn/2020102921535868.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)启动和关闭 Tomcat：
+文件夹： ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551555.png)启动和关闭 Tomcat：
 
 
-![img](https://img-blog.csdnimg.cn/2020102921543768.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 访问测试： [http://localhost:8080/](http://localhost:8080/)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551548.png) 访问测试： [http://localhost:8080/](http://localhost:8080/)
 
 可能遇到的问题：
 
@@ -82,7 +82,7 @@ Tomcat官网： [http://tomcat.apache.org/](http://tomcat.apache.org/)
 Servlet 核心配置文件目录如下：
 
 
-![img](https://img-blog.csdnimg.cn/20201029215639475.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 可以配置启动的端口号
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551369.png) 可以配置启动的端口号
 
 - tomcat的默认端口号为：8080 
 - mysql：3306 
@@ -112,7 +112,7 @@ Servlet 核心配置文件目录如下：
 
 
 
-![img](https://img-blog.csdnimg.cn/20201025183516937.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201025184035890.png#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551266.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551431.png)
 
 ## 3.4 发布一个 Web 网站
 
@@ -263,75 +263,75 @@ Maven 的核心思想：**约定大于配置**
 
 
 
-![img](https://img-blog.csdnimg.cn/20201030195424154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)![img](https://img-blog.csdnimg.cn/20201030195556605.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201030195633838.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551149.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551260.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552260.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030195731149.png#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552089.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030195748148.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 3. 等待项目初始化完毕
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552329.png) 3. 等待项目初始化完毕
 
 
 
-![img](https://img-blog.csdnimg.cn/20201030195850935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)![img](https://img-blog.csdnimg.cn/20201030195912364.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552476.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552247.png) 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
 
 注意：IDEA 项目创建成功后，看一眼 Maven 的配置
 
 
-![img](https://img-blog.csdnimg.cn/20201030200540879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552760.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030200557328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552761.png) 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
 
 ## 5.4 创建一个普通的 Maven 项目
 
 
-![img](https://img-blog.csdnimg.cn/20201030200738636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552393.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030200806377.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552413.png)
 
 这个只有在Web应用下才会有！
 
 
-![img](https://img-blog.csdnimg.cn/20201030200833737.png#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552035.png)
 
 ## 5.5 标记文件夹功能
 
 
 
-![img](https://img-blog.csdnimg.cn/20201030200931259.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)![img](https://img-blog.csdnimg.cn/2020103020094687.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552613.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552862.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030201001211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552511.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030201021562.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552509.png)
 
 ## 5.6 在 IDEA 中配置 Tomcat
 
 
-![img](https://img-blog.csdnimg.cn/20201030201241524.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553348.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030201259888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553024.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030201259893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 解决警告问题
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553449.png) 解决警告问题
 
 必须要的配置：**为什么会有这个问题：我们访问一个网站，需要指定一个文件夹名字；**
 
 
 
 
-![img](https://img-blog.csdnimg.cn/20201030201543514.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201030201543519.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201030201543568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553684.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553006.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553806.png)
 
 ## 5.7 pom 文件
 
 pom.xml 是Maven的核心配置文件
 
 
-![img](https://img-blog.csdnimg.cn/20201030201714779.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553537.png)
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -412,7 +412,7 @@ pom.xml 是Maven的核心配置文件
 ```
 
 
-![img](https://img-blog.csdnimg.cn/20201030201813771.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553960.png)
 
 Maven 由于他的约定大于配置，我们之后可以能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：
 
@@ -443,10 +443,10 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 ## 5.8 IDEA 查看依赖树
 
 
-![img](https://img-blog.csdnimg.cn/20201030202127330.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553908.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201030202127343.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553701.png)
 
 ## 5.9 解决遇到的问题
 
@@ -460,12 +460,12 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 
 
 
-![img](https://img-blog.csdnimg.cn/20201030202443618.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) ![img](https://img-blog.csdnimg.cn/20201030202443626.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553101.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553816.png)
 
 1. Maven 默认 Web 项目中的 web.xml 版本问题
 
 
-![img](https://img-blog.csdnimg.cn/20201030203819426.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553753.png)
 
 1. 替换为 webapp4.0 版本和 Tomcat 一致
 
@@ -514,7 +514,7 @@ Serlvet 接口 Sun 公司有两个默认的实现类：HttpServlet，GenericServ
  </ol>  4.编写一个Servlet程序 
 
 
-![img](https://img-blog.csdnimg.cn/20201030203415617.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) S1：编写一个普通类 S2：实现 Servlet 接口，这里我们直接继承 HttpServlet
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553666.png) S1：编写一个普通类 S2：实现 Servlet 接口，这里我们直接继承 HttpServlet
 
 ```java
 public class HelloServlet extends HttpServlet {
@@ -555,7 +555,7 @@ public class HelloServlet extends HttpServlet {
 1. 配置 Tomcat 点击编辑，+ 号，选择本地的 Tomcat
 
 
-![img](https://img-blog.csdnimg.cn/20201030213329557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553600.png)
 
 1. 启动测试！
 
@@ -564,7 +564,7 @@ public class HelloServlet extends HttpServlet {
 Servlet 是由 Web 服务器调用，Web 服务器在收到浏览器请求之后，会：
 
 
-![img](https://img-blog.csdnimg.cn/20201030213749187.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553208.png)
 
 ## 6.4 Mapping 问题
 
@@ -756,7 +756,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ```
 
 
-![img](https://img-blog.csdnimg.cn/20201102191923294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554724.png)
 
 ### 6.5.4 读取资源文件
 
@@ -926,7 +926,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ### 6.6.3 实现重定向
 
 
-![img](https://img-blog.csdnimg.cn/20201102193947328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554555.png) Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
 
 常见场景：
 
@@ -958,7 +958,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 - 重定向时候，URL 地址栏会发生变化；
 
 
-![img](https://img-blog.csdnimg.cn/20201102194532388.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554690.png)
 
 ### 6.6.4 简单实现登录重定向
 
@@ -1018,13 +1018,13 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 HttpServletRequest 代表客户端的请求，用户通过 HTTP 协议访问服务器，HTTP 请求中的所有信息会被封装到 HttpServletRequest ，通过这个HttpServletRequest 的方法，获得客户端的所有信息；
 
 
-![img](https://img-blog.csdnimg.cn/20201102195801974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554601.png)
 
 
-![img](https://img-blog.csdnimg.cn/20201102195846293.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) **获取参数，请求转发**
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554233.png) **获取参数，请求转发**
 
 
-![img](https://img-blog.csdnimg.cn/20201102200108754.png#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554934.png)
 
 ```java
 @Override
@@ -1080,7 +1080,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ## 7.3 Cookie
 
 
-![img](https://img-blog.csdnimg.cn/20201102201302397.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554107.png)
 
 1. 从请求中拿到 cookie 信息 
 2. 服务器响应给客户端 cookie
@@ -1115,14 +1115,14 @@ URLDecoder.decode(cookie.getValue(),"UTF-8")
 ## 7.4 Session（重点）
 
 
-![img](https://img-blog.csdnimg.cn/20201102202256154.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 什么是 Session ？
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554146.png) 什么是 Session ？
 
 - 服务器会给每一个用户（浏览器）创建一个 Session 对象； 
 - 一个 Session 独占一个浏览器，只要浏览器没有关闭，这个 Session 就存在； 
 - 用户登录之后，整个网站它都可以访问！-&gt; 保存用户的信息；保存购物车的信息…
 
 
-![img](https://img-blog.csdnimg.cn/20201102202640957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) Session 和 cookie 的区别：
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554718.png) Session 和 cookie 的区别：
 
 - Cookie是把用户的数据写给用户的浏览器，浏览器保存 （可以保存多个） 
 - Session把用户的数据写到用户独占Session中，服务器端保存 （保存重要的信息，减少服务器资源的浪费） 
@@ -1209,7 +1209,7 @@ session.invalidate();
 ```
 
 
-![img](https://img-blog.csdnimg.cn/2020110220352212.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554775.png)
 
 
 ## 8.1 什么 JSP
@@ -1230,7 +1230,7 @@ Java Server Pages ： Java服务器端页面，也和Servlet一样，用于动�
 服务器内部工作： Tomcat 中有一个 work 工作目录； IDEA 中使用 Tomcat 的会在 IDEA 中 Tomcat 中生产一个 work 目录
 
 
-![img](https://img-blog.csdnimg.cn/20201102205139736.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554906.png)
 
 ```java
 C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session-cookie\work\Catalina\localhost\ROOT\org\apache\jsp
@@ -1239,7 +1239,7 @@ C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session
 发现页面转变成了 Java 程序
 
 
-![img](https://img-blog.csdnimg.cn/20201102205258993.png#pic_center) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555995.png) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
 
 JSP 最终也会被转换成一个 Java 类！ JSP 本质上就是一个 Servlet
 
@@ -1288,7 +1288,7 @@ _jspx_out = out;
 4.以上这些对象可直接在 JSP 中使用
 
 
-![img](https://img-blog.csdnimg.cn/20201102205856631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555290.png)
 
 在JSP页面中；
 
@@ -1481,7 +1481,7 @@ JSTL 标签库的使用就是为了弥补 HTML 标签的不足；它自定义许
 **核心标签** （掌握部分）
 
 
-![img](https://img-blog.csdnimg.cn/2020110221251720.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) **JSTL标签库使用步骤**
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555830.png) **JSTL标签库使用步骤**
 
 - 引入对应的 taglib 
 - 使用其中的方法 
@@ -1620,7 +1620,7 @@ class A{
 ## 10.1 以前
 
 
-![img](https://img-blog.csdnimg.cn/20201102213932114.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center)用户直接访问控制层，控制层就可以直接操作数据库；
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555751.png)用户直接访问控制层，控制层就可以直接操作数据库；
 
 ```java
 servlet--CRUD-->数据库
@@ -1638,7 +1638,7 @@ Mysql Oracle SqlServer ....
 ## 10.2 MVC 三层架构
 
 
-![img](https://img-blog.csdnimg.cn/20201102214221869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) Model
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555853.png) Model
 
 - 业务处理：业务逻辑（Service） 
 - 数据持久层：CRUD
@@ -1661,7 +1661,7 @@ Filter：过滤器，用来过滤网站的数据；
 - 登录验证
 
 
-![img](https://img-blog.csdnimg.cn/20201102214811292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) Filter 开发步骤：
+![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555656.png) Filter 开发步骤：
 
 
 1.  导包  
