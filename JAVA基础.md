@@ -88,8 +88,6 @@ JVM:	Java virtual Machine(跨平台核心，java虚拟机)
 
 ![psc (1208×505) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549820.png)
 
-
-
 ## 开发环境
 
 **卸载JDK**
@@ -202,6 +200,7 @@ project——module——src——package——class
 **Ctrl + D 复制当前行到下一行**
 **Ctrl +/ 一键注释**
 **Ctrl + R替换**
+**Ctrl + f查找**
 **Ctrl + W行尾选一行**
 **Ctrl + H** **打开继承树**
 **Ctrl + O** **重写方法**
@@ -214,6 +213,7 @@ project——module——src——package——class
 -----
 
 **Ctrl+Alt+T** 	**自动包裹**
+**Ctrl+Alt+L**	**格式化**
 
 
 
@@ -288,9 +288,9 @@ bps即1bits per second
 整数：二进制0b 十进制 八进制0   十六进制0x		0x11=17
 浮点数：有精度限制，超过精度会有舍入误差，避免使用浮点数对比，使用Bigdecimal数学工具类	字符：Unicode表，(int)c1 强制数据类型转换	U0000~UFFFF  65536=2^16^	
 布尔：boolean flag = ture; if(flag) 
-转义：escape character![常见转义字符表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549901.png)
+转义：escape character
 
-
+![常见转义字符表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549901.png)
 
 
 ## 类型转换
@@ -407,10 +407,6 @@ long end = System.currentTimeMillis();
 System.out.println("共耗时"+（end-start）+"毫秒");
 ```
 
-
-
-
-
 ## 包机制
 
 包的本质就是文件夹，为了更好地组织类，用于区别类名的命名空间
@@ -421,8 +417,6 @@ import package1[.pkg2···].(classname|*);
 import package1[.pkg2···].* //.*通配符  导入包内所有类
 ```
 一般利用公司域名倒置作为包名；com.kuangstudy.www
-
-
 
 
 ## Java.Doc

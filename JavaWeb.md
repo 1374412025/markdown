@@ -1,9 +1,9 @@
 [TOC]
 
-学习视频来自B站 **狂神说** JavaWeb视频：  [https://www.bilibili.com/video/BV12J411M7Sj?p=1](https://www.bilibili.com/video/BV12J411M7Sj?p=1)
+学习视频来自B站 **狂神说** JavaWeb视频：  [https://www.bilibili.com/video/BV12J411M7Sj?p=1](http://www.bilibili.com/video/BV12J411M7Sj?p=1)
 
+# 1 基本概念
 ## 1.1 前言
-
 静态Web：
 
 - 提供给所有人看数据不会发生变化！ 
@@ -33,56 +33,85 @@ Web 应用程序编写完毕后，若想提供给外界访问：需要一个服�
 ## 1.3动态 Web 的访问过程
 
 
-![屏幕截图 2023-03-18 150538](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550235.png)
+![屏幕截图 2023-03-18 150538](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550235.png)
 
 浏览器发送 HTTP 请求，服务器 Tomcat 接收请求，Servlet 容器从磁盘加载 Servlet 程序处理请求 request ，处理结束返回 response。
-
-
+# 2 web服务器
 ## 2.1 技术讲解
 
-PHP：
+**ASP:**
+
+- 微软:国内最早流行
+- 在HTML中嵌入VB脚本,ASP+COM;
+- 在ASP开发中,基本上一个页面都有几千航的业务代码,页面极其混乱
+- 维护成本高!
+- C#
+- llS
+
+**PHP：**
 
 - 作为开发速度很快，功能很强大，跨平台 
 - 无法承载大访问量的情况
 
-JSP/Servlet：
+**JSP/Servlet：**
 
 - 基于 Java 语言
 
+B/S:浏览器和服务器
+C/S:客户端和服务器
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550492.png) Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目。
+- sun公司主推的B/S架构
+- 基于Java语言
+- 可以承载三高问题带来的影响,高并发高可用高性能
+- 类似ASP
+
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550492.png)
+
+## 2.2 web服务器
+
+IIS
+
+Tomcat是Apache 软件基金会（Apache Software Foundation)的Jakarta 项目中的一个核心项目。
 
 Tomcat 技术先进、性能稳定，而且**免费**。
 
+# 3 Tomcat
 
 ## 3.1 安装 Tomcat
 
 Tomcat官网： [http://tomcat.apache.org/](http://tomcat.apache.org/)
 
-
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550787.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181550824.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550787.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550824.png)
 
 
 
-文件夹： ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551555.png)启动和关闭 Tomcat：
+## 3.2 Tomcat启动和配置 
 
+**文件夹作用：** ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551555.png)
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551548.png) 访问测试： [http://localhost:8080/](http://localhost:8080/)
+**启动和关闭 Tomcat：**
+
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551548.png) 访问测试： [http://localhost:8080/](http://localhost:8080/)
 
 可能遇到的问题：
 
 ```java
 1.Java 环境变量没有配置导致闪退
 2.乱码问题：可在配置文件中配置
+
+localhost:8080
+关闭:关cmd,或者用shutdown.bat
 ```
 
-## 3.3 配置
+
+
+## 3.3 配置Tomcat
 
 Servlet 核心配置文件目录如下：
 
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551369.png) 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551369.png) 可以配置启动的端口号
+**可以配置启动的端口号**(检查--网络--ctrl+r)
 
 - tomcat的默认端口号为：8080 
 - mysql：3306 
@@ -95,7 +124,7 @@ Servlet 核心配置文件目录如下：
            redirectPort="8443" />
 ```
 
-可配置主机名称
+**可配置主机名称**
 
 - 默认的主机名为：localhost-&gt;127.0.0.1 
 - 默认网站应用存放的位置为：webapps
@@ -105,16 +134,23 @@ Servlet 核心配置文件目录如下：
         unpackWARs="true" autoDeploy="true">
 ```
 
-**面试题：**
+但是也要改c盘的`Windows\system32\drivers\etc\hosts`
+加一行`127.0.0.1 www.qinjiang.com`
+
+### ==面试题：谈谈网站是如何进行访问的?==
 
 1.  在浏览器输入一个域名，回车；  
-2.  本机查看 C:\Windows\System32\drivers\etc\hosts 配置文件是否有相应域名的映射。 case1: 若有，则直接映射到对应的 IP 地址，进行访问。 case2: 若无，则去 DNS 服务器上查找对应的 IP ，找到就返回相应的 IP，找不到就不返回。 
+2.  本机查看 `C:\Windows\System32\drivers\etc\hosts`配置文件是否有相应域名的映射。
+    - case1: 若有，则直接映射到对应的 IP 地址，进行访问。
+    - case2: 若无，则去 DNS 服务器上查找对应的 IP ，找到就返回相应的 IP，找不到就不返回。 
 
-
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551266.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551431.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181653864.png)
 
 ## 3.4 发布一个 Web 网站
+
+不会就模仿
+
+- 将自己写的网站,放到服务器Tomcat中指定的web应用文件夹webapps下,就可以访问
 
 网站程序的结构：
 
@@ -135,24 +171,25 @@ Servlet 核心配置文件目录如下：
          -.....
 ```
 
+# 4 HTTP 
 
-## 4.2 什么是 HTTP?
+## ==4.2 什么是 HTTP?==
 
-HTTP(hypertext transport protocol) 超文本传输协议。
+==**HTTP**(hypertext transport protocol) 超文本传输协议。==
 
 - 文本 ：HTML，字符串… 
 - 超文本：图片，音乐，视频，定位，地图… 
 - 80 端口
 
-HTTPS（Hyper Text Transfer Protocol over SecureSocket Layer）：是以安全为目标的 HTTP 通道，在 HTTP 的基础上通过传输加密和身份认证保证了传输过程的安全性。HTTPS 在HTTP 的基础下加入SSL 层，HTTPS 的安全基础是 SSL。
+**HTTPS**（Hyper Text Transfer Protocol over SecureSocket Layer）：是以安全为目标的 HTTP 通道，在 HTTP 的基础上通过传输加密和身份认证保证了传输过程的安全性。HTTPS 在HTTP 的基础下加入SSL 层，HTTPS 的安全基础是 SSL。
 
 - 443 端口
 
-## 4.2 两个时代
+## ==4.2 两个时代==
 
 **HTTP 1.0:**
 
-- HTTP/1.0：客户端与 Web 服务器连接后，只能获得一个Wen 资源，然后就断开连接，加入某个页面有多个图片资源需要加载，那么需要连接多次，影响服务器和客户端的性能。
+- HTTP/1.0：客户端与 Web 服务器连接后，只能获得一个Web 资源，然后就断开连接，加入某个页面有多个图片资源需要加载，那么需要连接多次，影响服务器和客户端的性能。
 
 **HTTP 2.0:**
 
@@ -160,7 +197,7 @@ HTTPS（Hyper Text Transfer Protocol over SecureSocket Layer）：是以安全�
 
 ## 4.3 HTTP 请求
 
-客户端 -&gt; 发送请求（Request）-&gt;服务器
+**客户端 -&gt; 发送请求（Request）-&gt;服务器**
 
 百度：
 
@@ -179,14 +216,16 @@ Cache-Control:max-age=0
 Connection:keep-alive
 ```
 
-1、请求行
+**1、请求行**
 
-请求行中的请求方式：GET 请求方式：**Get，Post**，HEAD,DELETE,PUT,TRACT…
+![](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181731300.png)
 
-- get：请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效 
-- post：请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效。
+==请求行中的请求方式==：**Get，Post**，HEAD,DELETE,PUT,TRACT…
 
-2、消息头
+- **get**：请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效 
+- **post**：请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效。
+
+**2、消息头**
 
 ```java
 Accept：告诉浏览器，它所支持的数据类型
@@ -197,9 +236,9 @@ Connection：告诉浏览器，请求完成是断开还是保持连接
 HOST：主机..../.
 ```
 
-## 4.4 HTTP 响应
+## ==4.4 HTTP 响应==
 
-- 服务器 -&gt; 响应（response） -&gt;客户端
+**服务器 -&gt; 响应（response） -&gt;客户端**
 
 百度：
 
@@ -210,7 +249,7 @@ Content-Encoding:gzip    编码
 Content-Type:text/html   类型
 ```
 
-**1、响应体**
+**1、响应体**(接近消息头)
 
 ```java
 Accept：告诉浏览器，它所支持的数据类型
@@ -219,11 +258,12 @@ Accept-Language：告诉浏览器，它的语言环境
 Cache-Control：缓存控制
 Connection：告诉浏览器，请求完成是断开还是保持连接
 HOST：主机..../.
+
 Refresh：告诉客户端，多久刷新一次；
 Location：让网页重新定位；
 ```
 
-**2、响应状态码**
+==**2、响应状态码status code**==
 
 200：请求响应成功 200
 
@@ -235,103 +275,146 @@ Location：让网页重新定位；
 
 5xx：服务器代码错误 500 502:网关错误
 
-**常见面试题：**
+### ==常见面试题：==
 
 当你的浏览器中地址栏输入地址并回车的一瞬间到页面能够展示回来，经历了什么？
 
+# 5 Maven
 
 - 在 JavaWeb 开发中，需要使用大量的 jar 包，我们手动去导入； 
-- 如何能够让一个东西自动帮我导入和配置这个jar包。
+- 如何能够让一个东西**自动帮我导入和配置这个jar包**。
 
 由此，Maven诞生了！
 
 ## 5.1 Maven 项目架构管理工具
 
-Maven 的核心思想：**约定大于配置**
+Maven 的核心思想：**==约定大于配置==**
 
 - 有约束，不要去违反。 Maven 会规定好你该如何去编写我们的 Java 代码，必须要按照这个规范来；
 
 ## 5.2 下载安装 Maven
 
- [点击我查看安装教程 https://editor.csdn.net/md/?articleId=107500020](https://editor.csdn.net/md/?articleId=107500020)
+[官网](http://maven.apache.org/)
 
-## 5.3 在 IDEA 中使用 Maven
+下载**==binary zip archive==**
+![image-20230318181729526](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181817615.png)
+
+下载后解压即可;
+
+## 5.3 配置环境变量
+
+在我们的系统变量中
+
+配置如下配置:
+
+- ==M2_HOME maven目录下的bin目录==
+- ==MAVEN_HOME maven的目录==
+- ==在系统的path中配置 %MAVEN_HOME%\bin==
+
+测试:cmd:`mvn -version`
+
+![image-20230318184431316](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181844483.png)
+
+## 5.4 阿里云镜像
+
+- 镜像 mirrors
+  - 加速我们的下载
+- 国内建议使用阿里云镜像
+
+```xml
+<mirror>
+    <id>aliyunmaven</id>
+    <mirrorOf>*</mirrorOf>
+    <name>阿里云公共仓库</name>
+    <url>https://maven.aliyun.com/repository/public</url>
+</mirror>
+```
+
+## 5.5 本地仓库
+
+在本地的仓库,远程仓库;
+建立一个本地仓库 localRepository
+
+```xml
+<localRepository>D:\language_envir\Maven\apache-maven-3.9.1\maven-repo</localRepository>
+```
+
+
+
+## 5.6 在 IDEA 中使用 Maven
 
 1. 启动 IDEA 
 2. 创建一个 MavenWeb 项目
 
 
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551149.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552329.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551260.png) 
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551149.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181551260.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552260.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552089.png)
 
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552089.png)
-
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552329.png) 3. 等待项目初始化完毕
+3. 等待项目初始化完毕
 
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552476.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552247.png) 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552476.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552247.png) 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
 
 注意：IDEA 项目创建成功后，看一眼 Maven 的配置
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552760.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552760.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552761.png) 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552761.png) 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
 
-## 5.4 创建一个普通的 Maven 项目
-
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552393.png)
+## 5.7 创建一个普通的 Maven 项目
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552413.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552393.png)
+
+
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552413.png)
 
 这个只有在Web应用下才会有！
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552035.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552035.png)
 
-## 5.5 标记文件夹功能
-
-
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552613.png)![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552862.png)
+## 5.8 标记文件夹功能
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552511.png)
+
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552613.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552862.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181552509.png)
-
-## 5.6 在 IDEA 中配置 Tomcat
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552511.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553348.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552509.png)
+
+## 5.9 在 IDEA 中配置 Tomcat
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553024.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553348.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553449.png) 解决警告问题
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553024.png)
+
+
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553449.png) 解决警告问题
 
 必须要的配置：**为什么会有这个问题：我们访问一个网站，需要指定一个文件夹名字；**
 
 
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553684.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553006.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553806.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553684.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553006.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553806.png)
 
-## 5.7 pom 文件
+## 5.10 pom 文件
 
 pom.xml 是Maven的核心配置文件
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553537.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553537.png)
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -412,7 +495,7 @@ pom.xml 是Maven的核心配置文件
 ```
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553960.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553960.png)
 
 Maven 由于他的约定大于配置，我们之后可以能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：
 
@@ -440,32 +523,32 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 </build>
 ```
 
-## 5.8 IDEA 查看依赖树
+## 5.11 IDEA 查看依赖树
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553908.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553908.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553701.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553701.png)
 
-## 5.9 解决遇到的问题
+## 5.12 解决遇到的问题
 
 1. Maven 3.6.2 解决方法：降级为 3.6.1
 
 
-![img](https://img-blog.csdnimg.cn/20201030202248934.png#pic_center)
+![img](http://img-blog.csdnimg.cn/20201030202248934.png#pic_center)
 
 1.  Tomcat 闪退  
 2.  IDEA中每次都要重复配置Maven 在IDEA中的全局默认配置中去配置 
 
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553101.png) ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553816.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553101.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553816.png)
 
 1. Maven 默认 Web 项目中的 web.xml 版本问题
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553753.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553753.png)
 
 1. 替换为 webapp4.0 版本和 Tomcat 一致
 
@@ -514,7 +597,7 @@ Serlvet 接口 Sun 公司有两个默认的实现类：HttpServlet，GenericServ
  </ol>  4.编写一个Servlet程序 
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553666.png) S1：编写一个普通类 S2：实现 Servlet 接口，这里我们直接继承 HttpServlet
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553666.png) S1：编写一个普通类 S2：实现 Servlet 接口，这里我们直接继承 HttpServlet
 
 ```java
 public class HelloServlet extends HttpServlet {
@@ -555,7 +638,7 @@ public class HelloServlet extends HttpServlet {
 1. 配置 Tomcat 点击编辑，+ 号，选择本地的 Tomcat
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553600.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553600.png)
 
 1. 启动测试！
 
@@ -564,7 +647,7 @@ public class HelloServlet extends HttpServlet {
 Servlet 是由 Web 服务器调用，Web 服务器在收到浏览器请求之后，会：
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181553208.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553208.png)
 
 ## 6.4 Mapping 问题
 
@@ -756,7 +839,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ```
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554724.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554724.png)
 
 ### 6.5.4 读取资源文件
 
@@ -926,7 +1009,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ### 6.6.3 实现重定向
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554555.png) Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554555.png) Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
 
 常见场景：
 
@@ -958,7 +1041,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 - 重定向时候，URL 地址栏会发生变化；
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554690.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554690.png)
 
 ### 6.6.4 简单实现登录重定向
 
@@ -1018,13 +1101,13 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 HttpServletRequest 代表客户端的请求，用户通过 HTTP 协议访问服务器，HTTP 请求中的所有信息会被封装到 HttpServletRequest ，通过这个HttpServletRequest 的方法，获得客户端的所有信息；
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554601.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554601.png)
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554233.png) **获取参数，请求转发**
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554233.png) **获取参数，请求转发**
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554934.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554934.png)
 
 ```java
 @Override
@@ -1080,7 +1163,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ## 7.3 Cookie
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554107.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554107.png)
 
 1. 从请求中拿到 cookie 信息 
 2. 服务器响应给客户端 cookie
@@ -1115,14 +1198,14 @@ URLDecoder.decode(cookie.getValue(),"UTF-8")
 ## 7.4 Session（重点）
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554146.png) 什么是 Session ？
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554146.png) 什么是 Session ？
 
 - 服务器会给每一个用户（浏览器）创建一个 Session 对象； 
 - 一个 Session 独占一个浏览器，只要浏览器没有关闭，这个 Session 就存在； 
 - 用户登录之后，整个网站它都可以访问！-&gt; 保存用户的信息；保存购物车的信息…
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554718.png) Session 和 cookie 的区别：
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554718.png) Session 和 cookie 的区别：
 
 - Cookie是把用户的数据写给用户的浏览器，浏览器保存 （可以保存多个） 
 - Session把用户的数据写到用户独占Session中，服务器端保存 （保存重要的信息，减少服务器资源的浪费） 
@@ -1209,10 +1292,10 @@ session.invalidate();
 ```
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554775.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554775.png)
 
 
-## 8.1 什么 JSP
+## 8.1 什么 是JSP
 
 Java Server Pages ： Java服务器端页面，也和Servlet一样，用于动态Web技术！
 
@@ -1230,7 +1313,7 @@ Java Server Pages ： Java服务器端页面，也和Servlet一样，用于动�
 服务器内部工作： Tomcat 中有一个 work 工作目录； IDEA 中使用 Tomcat 的会在 IDEA 中 Tomcat 中生产一个 work 目录
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181554906.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554906.png)
 
 ```java
 C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session-cookie\work\Catalina\localhost\ROOT\org\apache\jsp
@@ -1239,7 +1322,7 @@ C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session
 发现页面转变成了 Java 程序
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555995.png) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555995.png) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
 
 JSP 最终也会被转换成一个 Java 类！ JSP 本质上就是一个 Servlet
 
@@ -1288,7 +1371,7 @@ _jspx_out = out;
 4.以上这些对象可直接在 JSP 中使用
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555290.png)
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555290.png)
 
 在JSP页面中；
 
@@ -1481,7 +1564,7 @@ JSTL 标签库的使用就是为了弥补 HTML 标签的不足；它自定义许
 **核心标签** （掌握部分）
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555830.png) **JSTL标签库使用步骤**
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555830.png) **JSTL标签库使用步骤**
 
 - 引入对应的 taglib 
 - 使用其中的方法 
@@ -1620,7 +1703,7 @@ class A{
 ## 10.1 以前
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555751.png)用户直接访问控制层，控制层就可以直接操作数据库；
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555751.png)用户直接访问控制层，控制层就可以直接操作数据库；
 
 ```java
 servlet--CRUD-->数据库
@@ -1638,7 +1721,7 @@ Mysql Oracle SqlServer ....
 ## 10.2 MVC 三层架构
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555853.png) Model
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555853.png) Model
 
 - 业务处理：业务逻辑（Service） 
 - 数据持久层：CRUD
@@ -1661,13 +1744,13 @@ Filter：过滤器，用来过滤网站的数据；
 - 登录验证
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181555656.png) Filter 开发步骤：
+![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555656.png) Filter 开发步骤：
 
 
 1.  导包  
 2.  编写过滤器 
  <ul> 
-  2. 导包不要错 ![img](https://img-blog.csdnimg.cn/20201102214949591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 
+  2. 导包不要错 ![img](http://img-blog.csdnimg.cn/20201102214949591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 
  </ul> 
 
 ```java
