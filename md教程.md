@@ -97,11 +97,9 @@ ctrl+k超链接
 
 [哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/)
 
-![](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181556426.jpeg)
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191633507.jpeg)
 
-![图片](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181556442.jpeg)
-
-
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191631084.jpeg)
 
 ==(9)数学公式==
 

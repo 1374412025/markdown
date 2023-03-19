@@ -20,7 +20,9 @@
 
 Web 应用程序：可以提供浏览器访问的程序；
 
-这个统一的w eb资源会被放在同一个文件夹下，Web 应用程序 —&gt; Tomcat：服务器 一个 Web 应用由多部分组成（静态Web、动态Web）
+这个统一的web资源会被放在同一个文件夹下
+Web 应用程序 —&gt; Tomcat-—> 服务器 
+一个 Web 应用由多部分组成（静态Web、动态Web）
 
 - HTML，CSS，JavaScript 
 - JSP，Servlet 
@@ -33,9 +35,10 @@ Web 应用程序编写完毕后，若想提供给外界访问：需要一个服�
 ## 1.3动态 Web 的访问过程
 
 
-![屏幕截图 2023-03-18 150538](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550235.png)
+![](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191616073.png)
 
-浏览器发送 HTTP 请求，服务器 Tomcat 接收请求，Servlet 容器从磁盘加载 Servlet 程序处理请求 request ，处理结束返回 response。
+==**浏览器发送 HTTP 请求，服务器 Tomcat 接收请求，Servlet 容器从磁盘加载 Servlet 程序处理请求 request ，处理结束返回 response。**==
+
 # 2 web服务器
 ## 2.1 技术讲解
 
@@ -65,7 +68,7 @@ C/S:客户端和服务器
 - 可以承载三高问题带来的影响,高并发高可用高性能
 - 类似ASP
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550492.png)
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191617772.png)
 
 ## 2.2 web服务器
 
@@ -81,7 +84,7 @@ Tomcat 技术先进、性能稳定，而且**免费**。
 
 Tomcat官网： [http://tomcat.apache.org/](http://tomcat.apache.org/)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550787.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181550824.png)
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191617630.png) ![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191617085.png)
 
 
 
@@ -91,7 +94,7 @@ Tomcat官网： [http://tomcat.apache.org/](http://tomcat.apache.org/)
 
 **启动和关闭 Tomcat：**
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551548.png) 访问测试： [http://localhost:8080/](http://localhost:8080/)
+![imgs202303181551548](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191650839.png)访问测试： [http://localhost:8080/](http://localhost:8080/)
 
 可能遇到的问题：
 
@@ -109,7 +112,7 @@ localhost:8080
 
 Servlet 核心配置文件目录如下：
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551369.png) 
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191608320.png) 
 
 **可以配置启动的端口号**(检查--网络--ctrl+r)
 
@@ -144,7 +147,7 @@ Servlet 核心配置文件目录如下：
     - case1: 若有，则直接映射到对应的 IP 地址，进行访问。
     - case2: 若无，则去 DNS 服务器上查找对应的 IP ，找到就返回相应的 IP，找不到就不返回。 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181653864.png)
+ ![imgs202303181653864](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191650545.png)
 
 ## 3.4 发布一个 Web 网站
 
@@ -218,7 +221,7 @@ Connection:keep-alive
 
 **1、请求行**
 
-![](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181731300.png)
+ ![imgs202303181731300](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191651187.png)
 
 ==请求行中的请求方式==：**Get，Post**，HEAD,DELETE,PUT,TRACT…
 
@@ -297,7 +300,7 @@ Maven 的核心思想：**==约定大于配置==**
 [官网](http://maven.apache.org/)
 
 下载**==binary zip archive==**
-![image-20230318181729526](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181817615.png)
+ ![imgs202303181817615](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191651045.png)
 
 下载后解压即可;
 
@@ -313,7 +316,7 @@ Maven 的核心思想：**==约定大于配置==**
 
 测试:cmd:`mvn -version`
 
-![image-20230318184431316](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181844483.png)
+ ![imgs202303181844483](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191651449.png)
 
 ## 5.4 阿里云镜像
 
@@ -346,77 +349,83 @@ Maven 的核心思想：**==约定大于配置==**
 1. 启动 IDEA 
 2. 创建一个 MavenWeb 项目
 
+![imgs202303181551149](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191652693.png)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551149.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552329.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181551260.png) 
+![imgs202303181552329](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191652794.png)
+
+![imgs202303181551260](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191654480.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552089.png)
+![imgs202303181552089](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191655528.png)
 
 3. 等待项目初始化完毕
 
+![imgs202303181552476](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191656202.png)
 
+![imgs202303181552247](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191656872.png)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552476.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552247.png) 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
+ 4. 观察 maven 仓库中多了什么东西？ 5. IDEA 中的 Maven 设置
 
 注意：IDEA 项目创建成功后，看一眼 Maven 的配置
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552760.png)
+![imgs202303181552760](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191656926.png)
 
+![imgs202303181552761](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191657207.png)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552761.png) 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
+ 6. 到这里，Maven 在 IDEA 中的配置和使用就 OK 了！
 
 ## 5.7 创建一个普通的 Maven 项目
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552393.png)
+![imgs202303181552393](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191657675.png)
 
-
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552413.png)
+![imgs202303181552413](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191657070.png)
 
 这个只有在Web应用下才会有！
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552035.png)
+![imgs202303181552035](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191657054.png)
 
 ## 5.8 标记文件夹功能
 
+![imgs202303181552613](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191658988.png)
+
+![imgs202303181552862](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191658565.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552613.png)![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552862.png)
+![imgs202303181552511](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191658728.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552511.png)
-
-
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181552509.png)
+![imgs202303181552509](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191658894.png)
 
 ## 5.9 在 IDEA 中配置 Tomcat
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553348.png)
+![imgs202303181553348](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191658967.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553024.png)
+![imgs202303181553024](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191659713.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553449.png) 解决警告问题
+![imgs202303181553449](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191659253.png) 解决警告问题
 
 必须要的配置：**为什么会有这个问题：我们访问一个网站，需要指定一个文件夹名字；**
 
+![imgs202303181553684](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191659208.png)
 
+![imgs202303181553006](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191659981.png)
 
-
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553684.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553006.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553806.png)
+ ![imgs202303181553806](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191659712.png)
 
 ## 5.10 pom 文件
 
-pom.xml 是Maven的核心配置文件
+**==pom.xml 是Maven的核心配置文件==**
 
 
 ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553537.png)
 
-```java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--Maven版本和头文件-->
@@ -425,9 +434,10 @@ pom.xml 是Maven的核心配置文件
   <modelVersion>4.0.0</modelVersion>
 
   <!--这里就是我们刚才配置的GAV-->
-  <groupId>com.kuang</groupId>
-  <artifactId>javaweb-01-maven</artifactId>
+  <groupId>org.example</groupId>
+  <artifactId>Maven</artifactId>
   <version>1.0-SNAPSHOT</version>
+      
   <!--Package：项目的打包方式
   jar：java应用
   war：JavaWeb应用
@@ -446,6 +456,7 @@ pom.xml 是Maven的核心配置文件
 
   <!--项目依赖-->
   <dependencies>
+    <!-- Maveb的高级之处在于,他会帮你导入这个JAR包所以来的其他jar包-->
     <!--具体依赖的jar包配置文件-->
     <dependency>
       <groupId>junit</groupId>
@@ -494,12 +505,15 @@ pom.xml 是Maven的核心配置文件
 </project>
 ```
 
+不使用模板jwebapp,自己写pom,
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553960.png)
+![imgs202303181553960](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191700215.png)
 
-Maven 由于他的约定大于配置，我们之后可以能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案：
+## 5.11 maven资源导出问题
 
-```java
+**Maven 由于他的约定大于配置，我们之后可以能遇到我们写的配置文件，无法被导出或者生效的问题，解决方案**：**==配置resources结点==**
+
+```xml
 <!--在build中配置resources，来防止我们资源导出失败的问题-->
 <build>
     <resources>
@@ -523,15 +537,15 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 </build>
 ```
 
-## 5.11 IDEA 查看依赖树
+## 5.12 IDEA 查看依赖树
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553908.png)
+![imgs202303181553908](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191700552.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553701.png)
+![imgs202303181553701](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191700709.png)
 
-## 5.12 解决遇到的问题
+## 5.13 解决遇到的问题
 
 1. Maven 3.6.2 解决方法：降级为 3.6.1
 
@@ -543,12 +557,14 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553101.png) ![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553816.png)
+![imgs202303181553101](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191700972.png)
+
+ ![imgs202303181553816](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191700625.png)
 
 1. Maven 默认 Web 项目中的 web.xml 版本问题
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553753.png)
+![imgs202303181553753](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191701031.png)
 
 1. 替换为 webapp4.0 版本和 Tomcat 一致
 
@@ -566,38 +582,75 @@ Maven 由于他的约定大于配置，我们之后可以能遇到我们写的�
 </web-app>
 ```
 
+# 6 Servlet
 
-Servlet 就是 Sun 公司开发动态 Web 的一门技术
+## 6.1 Servlet简介
 
-Sun 在这些 API （Application Programming Interface，应用程序接口）中提供一个接口叫做：Servlet，如果你想开发一个Servlet程序，只需要完成两个小步骤：
+[官网](http://mvnrepository.com/)
 
-- 编写一个类，实现Servlet接口。 
-- 把开发好的Java类部署到web服务器中。
+- Servlet 就是 Sun 公司开发动态 Web 的一门技术
 
-**把实现了 Servlet 接口的 Java 程序叫做，Servlet**
+- Sun 在这些 API 中提供一个接口叫做：Servlet，如果你想开发一个Servlet程序，只需要完成两个小步骤：
+
+  - 编写一个类，实现Servlet接口。 
+
+  - 把开发好的Java类部署到web服务器中。
+
+Serlvet 接口 Sun 公司有两个默认的实现类：**HttpServlet，GenericServlet**
 
 ## 6.2 HelloServlet
 
-Serlvet 接口 Sun 公司有两个默认的实现类：HttpServlet，GenericServlet
+### 6.2.1**构建一个普通的Maven项目**
 
-1.  构建一个普通的Maven项目，删掉里面的src目录，以后我们的学习就在这个项目里面建立Moudel；这个空的工程就是Maven主工程（建一个WebApp Maven项目，勾选模板）；  
-2.  关于Maven父子工程的理解： 父项目中会有： <modules>
-        <module>servlet-01</module>
-    </modules> 子项目中会有： <parent>
-        <artifactId>javaweb-02-servlet</artifactId>
-        <groupId>com.kuang</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent> 父项目中的 Java 子项目可以直接使用 son extends father 
- <ol start="3"> 
-  2. Maven 环境优化 
-   <ul> 
-    2. 修改 web.xml 为最新的 
-    2. 将 maven 的结构搭建完整 
-   </ul>  
- </ol>  4.编写一个Servlet程序 
+删掉里面的src目录，以后我们的学习就在这个项目里面建立Moudule；这个空的工程就是Maven主工程（建一个WebApp Maven项目，勾选模板）；  
 
+### 6.2.2**再新建module**
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553666.png) S1：编写一个普通类 S2：实现 Servlet 接口，这里我们直接继承 HttpServlet
+模板maven-archetype-webappp
+Maven父子工程的理解： 
+父项目中会有： 
+
+```xml
+<modules>
+      <module>servlet-01</module>
+</modules> 
+```
+
+子项目中会有： 
+
+```xml
+<parent>
+      <artifactId>javaweb-02-servlet</artifactId>
+      <groupId>com.kuang</groupId>
+      <version>1.0-SNAPSHOT</version>
+</parent> 
+```
+
+父项目中的 Java 子项目可以直接使用 son extends father 
+
+### **6.2.3.Maven 环境优化** 
+
+- 修改 web.xml 为最新的 
+
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+  		http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  </web-app>
+  ```
+
+  
+
+- 将 maven 的结构搭建完整
+
+### **6.2.4.编写一个Servlet程序**
+
+- 编写一个普通类
+- 实现servlet接口,我们这儿直接继承HttpServlet
+
+ ![imgs202303181553666](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191701257.png)
 
 ```java
 public class HelloServlet extends HttpServlet {
@@ -620,49 +673,58 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-1.  编写 Servlet 的映射 为什么需要映射：我们写的是 Java 程序，但是要通过浏览器访问，而浏览器需要连接 Web 服务器，所以我们需要再 Web 服务中注册我们写的 Servlet，还需给他一个浏览器能够访问的路径； 
+### ==**6.2.5.编写 Servlet 的映射**== 
 
-```java
+为什么需要映射：我们写的是 Java 程序，但是要通过浏览器访问，而浏览器需要连接 Web 服务器，所以我们需要再 Web 服务中注册我们写的 Servlet，还需给他一个浏览器能够访问的路径； 
+
+```xml
 <!--注册Servlet-->
     <servlet>
         <servlet-name>hello</servlet-name>
         <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
     </servlet>
-    <!--Servlet的请求路径-->
+    <!--Servlet的请求路径,第二个hello-->
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <url-pattern>/hello</url-pattern>    
     </servlet-mapping>
 ```
 
-1. 配置 Tomcat 点击编辑，+ 号，选择本地的 Tomcat
+### **6.2.6.配置 Tomcat 点击编辑**，
+
+**+ 号，选择本地的 Tomcat**,==**deployment里,Application context:命名为S1**==
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553600.png)
+![imgs202303181553600](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191701371.png)
 
-1. 启动测试！
+### 6.2.7启动测试
+
+启动后会生成target包
+访问:http://localhost:8080/s1/hello
 
 ## 6.3 Servlet 原理
 
 Servlet 是由 Web 服务器调用，Web 服务器在收到浏览器请求之后，会：
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181553208.png)
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191559304.png)
 
 ## 6.4 Mapping 问题
 
-1. 一个 Servlet 可以指定一个映射路径
+1. **一个 Servlet 可以指定一个映射路径**
 
-```java
+```xml
 <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+    
+    <!--http://localhost:8080/s1/hello-->
 ```
 
-1. 一个 Servlet 可以指定一个映射路径
+2. **一个 Servlet 可以指定多个映射路径**
 
-```java
+```xml
 <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -683,47 +745,50 @@ Servlet 是由 Web 服务器调用，Web 服务器在收到浏览器请求之后
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello5</url-pattern>
     </servlet-mapping>
+<!--http://localhost:8080/s1/hello3-->
 ```
 
-1. 一个Servlet可以指定通用映射路径
+3. **一个Servlet可以指定通用映射路径**
 
-```java
+```xml
 <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello/*</url-pattern>
     </servlet-mapping>
+<!--http://localhost:8080/s1/hello/asdsad-->
 ```
 
-1. 默认请求路径
+4. **默认请求路径**
 
-```java
+```xml
 <!--默认请求路径-->
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <!--http://localhost:8080/s1/   会干掉主页面,index.jsp-->
 ```
 
-1. 指定一些后缀或者前缀等等….
+5. **指定一些后缀或者前缀等等….**
 
-```java
+```xml
 <!--可以自定义后缀实现请求映射
     注意点，*前面不能加项目映射的路径
     hello/sajdlkajda.qinjiang
-    -->
+-->
 <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>*.qinjiang</url-pattern>
 </servlet-mapping>
 ```
 
-1. 优先级问题 指定了固有的映射路径优先级最高，如果找不到就会走默认的处理请求；
+6. **优先级问题 指定了固有的映射路径优先级最高，如果找不到就会走默认的处理请求；**
 
-```java
+```xml
 <!--404-->
 <servlet>
     <servlet-name>error</servlet-name>
-    <servlet-class>com.kuang.servlet.ErrorServlet</servlet-class>
+    <servlet-class>com.jing.servlet.ErrorServlet</servlet-class>
 </servlet>
 <servlet-mapping>
     <servlet-name>error</servlet-name>
@@ -839,7 +904,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ```
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554724.png)
+![imgs202303181554724](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191701783.png)
 
 ### 6.5.4 读取资源文件
 
@@ -1008,8 +1073,9 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
 ### 6.6.3 实现重定向
 
+![imgs202303181554555](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191702442.png)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554555.png) Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
+Web 资源 B 收到客户端 A 请求后，通知 A 访问另一个 Web 资源 C ，这个过程叫做重定向
 
 常见场景：
 
@@ -1041,7 +1107,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 - 重定向时候，URL 地址栏会发生变化；
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554690.png)
+![imgs202303181554690](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191702275.png)
 
 ### 6.6.4 简单实现登录重定向
 
@@ -1101,13 +1167,13 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 HttpServletRequest 代表客户端的请求，用户通过 HTTP 协议访问服务器，HTTP 请求中的所有信息会被封装到 HttpServletRequest ，通过这个HttpServletRequest 的方法，获得客户端的所有信息；
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554601.png)
+![imgs202303181554601](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191702901.png)
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554233.png) **获取参数，请求转发**
+ **![imgs202303181554233](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191702485.png)获取参数，请求转发**
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554934.png)
+![imgs202303181554934](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191702250.png)
 
 ```java
 @Override
@@ -1163,7 +1229,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 ## 7.3 Cookie
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554107.png)
+![imgs202303181554107](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191703081.png)
 
 1. 从请求中拿到 cookie 信息 
 2. 服务器响应给客户端 cookie
@@ -1198,14 +1264,15 @@ URLDecoder.decode(cookie.getValue(),"UTF-8")
 ## 7.4 Session（重点）
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554146.png) 什么是 Session ？
+ ![imgs202303181554146](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191703479.png)什么是 Session ？
 
 - 服务器会给每一个用户（浏览器）创建一个 Session 对象； 
 - 一个 Session 独占一个浏览器，只要浏览器没有关闭，这个 Session 就存在； 
 - 用户登录之后，整个网站它都可以访问！-&gt; 保存用户的信息；保存购物车的信息…
 
+ ![imgs202303181554718](../../Picgoimages/images/imgs202303181554718.png)
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554718.png) Session 和 cookie 的区别：
+Session 和 cookie 的区别：
 
 - Cookie是把用户的数据写给用户的浏览器，浏览器保存 （可以保存多个） 
 - Session把用户的数据写到用户独占Session中，服务器端保存 （保存重要的信息，减少服务器资源的浪费） 
@@ -1292,7 +1359,7 @@ session.invalidate();
 ```
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554775.png)
+![imgs202303181554775](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191704156.png)
 
 
 ## 8.1 什么 是JSP
@@ -1313,7 +1380,7 @@ Java Server Pages ： Java服务器端页面，也和Servlet一样，用于动�
 服务器内部工作： Tomcat 中有一个 work 工作目录； IDEA 中使用 Tomcat 的会在 IDEA 中 Tomcat 中生产一个 work 目录
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181554906.png)
+![imgs202303181554906](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191704917.png)
 
 ```java
 C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session-cookie\work\Catalina\localhost\ROOT\org\apache\jsp
@@ -1322,7 +1389,7 @@ C:\Users\Administrator\.IntelliJIdea2018.1\system\tomcat\Unnamed_javaweb-session
 发现页面转变成了 Java 程序
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555995.png) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
+![imgs202303181555995](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191704967.png) 浏览器向服务器发送请求，不管访问什么资源，起始都是在访问 Servlet ！
 
 JSP 最终也会被转换成一个 Java 类！ JSP 本质上就是一个 Servlet
 
@@ -1371,7 +1438,7 @@ _jspx_out = out;
 4.以上这些对象可直接在 JSP 中使用
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555290.png)
+![imgs202303181555290](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191704019.png)
 
 在JSP页面中；
 
@@ -1564,7 +1631,7 @@ JSTL 标签库的使用就是为了弥补 HTML 标签的不足；它自定义许
 **核心标签** （掌握部分）
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555830.png) **JSTL标签库使用步骤**
+![imgs202303181555830](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191705612.png) **JSTL标签库使用步骤**
 
 - 引入对应的 taglib 
 - 使用其中的方法 
@@ -1703,7 +1770,7 @@ class A{
 ## 10.1 以前
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555751.png)用户直接访问控制层，控制层就可以直接操作数据库；
+![imgs202303181555751](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191705907.png)用户直接访问控制层，控制层就可以直接操作数据库；
 
 ```java
 servlet--CRUD-->数据库
@@ -1721,7 +1788,7 @@ Mysql Oracle SqlServer ....
 ## 10.2 MVC 三层架构
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555853.png) Model
+ ![imgs202303181555853](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191705925.png)Model
 
 - 业务处理：业务逻辑（Service） 
 - 数据持久层：CRUD
@@ -1744,14 +1811,14 @@ Filter：过滤器，用来过滤网站的数据；
 - 登录验证
 
 
-![img](http://raw.githubusercontent.com/1374412025/images/main/imgs202303181555656.png) Filter 开发步骤：
+![imgs202303181555656](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191706415.png) Filter 开发步骤：
 
 
 1.  导包  
 2.  编写过滤器 
- <ul> 
-  2. 导包不要错 ![img](http://img-blog.csdnimg.cn/20201102214949591.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2MTg4MTI3,size_16,color_FFFFFF,t_70#pic_center) 
- </ul> 
+
+  2. 导包不要错 ![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191706299.png) 
+
 
 ```java
 public class CharacterEncodingFilter implements Filter {

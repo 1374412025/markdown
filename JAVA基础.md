@@ -12,7 +12,7 @@
 		运算器		控制器			（CPU）
 	
 
-![](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181547250.jpeg)
+![imgs202303181547250](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191642915.jpeg)
 
 ##计算机软件
 
@@ -86,7 +86,7 @@ JRE:	Java Runtime Environment		java运行环境，
 
 JVM:	Java virtual Machine(跨平台核心，java虚拟机)
 
-![psc (1208×505) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549820.png)
+![imgs202303181549820](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191638052.png)
 
 ## 开发环境
 
@@ -115,11 +115,11 @@ JVM:	Java virtual Machine(跨平台核心，java虚拟机)
 
 **project structure中进行环境选择**
 
-![psc (745×350) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549985.png)
+![imgs202303181549985](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191639136.png)
 
 project structure中的module可以设置资源文件夹
 
-![psc (1275×380) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549830.png)
+![imgs202303181549830](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191639840.png)
 
 
 
@@ -170,7 +170,7 @@ integrated development environment
 
 new project 选择empty project
 
-![psc (479×679) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549415.png)
+![imgs202303181549415](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191640692.png)
 
 然后右键文件夹，点击新建module
 project——module——src——package——class
@@ -185,15 +185,8 @@ project——module——src——package——class
 
 -----
 
-**双击Shift打开搜索**
-
-**ALT+ INSERT** **构造函数、setter**
+**ALT+ INSERT** 代码自动生成,setter,getter,overwrite,构造函数,toString()
 **ALT+ Enter 补充语句**，cast可以强制类型转换，解决报错
-
------
-
-**Shift+F10编译运行**
-**Shift+Enter下一行**
 
 ****
 
@@ -204,18 +197,20 @@ project——module——src——package——class
 **Ctrl + W行尾选一行**
 **Ctrl + H** **打开继承树**
 **Ctrl + O** **重写方法**
+**Ctrl + Y 删除光标所在行 或 删除选中的行 ** 
+**Ctrl + Z 撤销 ** 
+**Ctrl+shift+Z 反撤销**
 
 -------
 
 **Ctrl+shift+Enter 规范格式**
-**Ctrl+shift+F10编译运行当前文件**
 
 -----
 
 **Ctrl+Alt+T** 	**自动包裹**
 **Ctrl+Alt+L**	**格式化**
 
-
+**F2自动跳转下一个高亮错误或警告**
 
 ###版本更新
 
@@ -240,13 +235,13 @@ ctrl+/ 	用单行注释方法注释多行
 
 ## 关键字
 
-![psc (1024×734) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549052.png)
+![imgs202303181549052](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191640678.png)
 
 ## 标识符
 
 ==JAVA所有组成部分都需要名字，类名，变量名以及方法名都被称为标识符==
 
-![psc (1415×765) (qpic.cn)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549537.png)
+![imgs202303181549537](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191640127.png)
 
 类名：public class  Hello 								**Hello**就是类名
 public static void main（String[] args)  	  **main**就是方法名
@@ -290,7 +285,7 @@ bps即1bits per second
 布尔：boolean flag = ture; if(flag) 
 转义：escape character
 
-![常见转义字符表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549901.png)
+![imgs202303181549901](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191641914.png)
 
 
 ## 类型转换
@@ -350,7 +345,7 @@ type varName [=value] [{,varName[=value]}];
 	②局部变量存在于栈内存中，作用的范围结束，变量空间会自动释放。
 	③局部变量没有默认初始化值 
 
-![20151221224044459 (629×331) (csdn.net)](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181549984.png)
+![imgs202303181549984](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191641590.png)
 
 **常量constan**t：初始化initialize后不再改变；
 特殊的变量，后续不允许被改变
@@ -891,10 +886,7 @@ SparseArray
 - 包含了**所有的class类**(其方法和成员变量)       **static变量**(静态方法区)
 - 可以被所有的线程共享
 
-
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181544878.png)
-
-
+![imgs202303181544878](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191642740.png)
 
 ## **封装**
 
@@ -1312,7 +1304,7 @@ interface TestService{
 **检查性异常，运行时异常，错误**
 异常体系结构
 `java.lang.Throwable`作为所有异常的超类
-![](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181546150.jpeg)
+![imgs202303181546150](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191643715.jpeg)
 
 捕获异常
 

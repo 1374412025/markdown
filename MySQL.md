@@ -96,20 +96,20 @@ sqlyog可视化操作软件
 打开安装包，一直下一步(中途可以设置安装路径)
 运行程序，**选择语言，点击新建**
 
-<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557896.png" alt="新建" style="zoom:80%;" />
+![imgs202303181557896](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191644947.png)
 
 **然后启动服务**
-![启动服务](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557715.png)
+![imgs202303181557715](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191644614.png)
 
 **输入用户名和密码**
-![用户名](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557011.png)
+![imgs202303181557011](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191644292.png)
 
 **进入界面完成**
 
 ## 1.5、SQLyog使用
 
 ​	1、**创建数据库school**，右击左边目录创建数据库
-![创建数据库](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557632.png)
+![imgs202303181557632](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191644806.png)
 
 ```sql
 CREATE DATABASE `school`CHARACTER SET utf8 COLLATE utf8_general_ci; 
@@ -120,7 +120,7 @@ CREATE DATABASE `school`CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 > 字段：id，name，age
 
-<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557429.png" alt="创建表" style="zoom:100%;" />
+![imgs202303181557429](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191645612.png)
 
 ```sql
 CREATE TABLE `school`.`student` ( `id` INT(10) NOT NULL COMMENT '学员id', `name` VARCHAR(100) NOT NULL COMMENT '学员姓名', `age` INT(3) NOT NULL COMMENT '学员年龄', PRIMARY KEY (`id`) ) ENGINE=INNODB CHARSET=utf8 COLLATE=utf8_general_ci; 
@@ -128,7 +128,7 @@ CREATE TABLE `school`.`student` ( `id` INT(10) NOT NULL COMMENT '学员id', `nam
 
 3、 **查看表**
 目录右击表，打开表，可以直接在null处添加，添加后点击右侧工具栏刷新，保存修改
-<img src="https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557492.png" style="zoom:80%;" />
+![imgs202303181557492](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191645692.png)
 
 勾选后可以删掉
 
@@ -586,7 +586,7 @@ Data Query Language：数据库查询语言
 >select语法
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181557278.png)
+ ![imgs202303181557278](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191646023.png)
 
 ## 4.2查询 SELECT
 
@@ -693,7 +693,7 @@ WHERE `studentresult`IN('59','58');
 
 ## 4.4、联表查询
 
-![联表](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558772.png)
+ ![imgs202303181558772](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191646773.png)
 
 |    操作    |                       描述                       |
 | :--------: | :----------------------------------------------: |
@@ -773,7 +773,7 @@ where s.studentno is not null;
 自己的表和自己的表连接，核心：拆成两个一模一样的表
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558895.png)
+ ![imgs202303181558895](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191647222.png)
 
 父类
 
@@ -825,7 +825,7 @@ WHERE `pwd`='***'
 
 ## 4.7、分组和过滤
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-jMiW02m4-1621309051592)(C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20200429180334341.png)]
+
 
 ## 4.8、select小节
 
@@ -872,8 +872,6 @@ SELECT VERSION()
 ```
 
 ## 5.2、聚合函数
-
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-QRShGLiE-1621309051595)(C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20200429174708478.png)]
 
 ```sql
 SELECT COUNT(`name`)FROM `tykdk`
@@ -929,7 +927,7 @@ INSERT INTO `testmd5`  VALUES ('4',MD5('123456'),'xm')
 隔离性问题：
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558024.png)
+ ![imgs202303181558024](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191648515.png)
 
 >执行事务
 
@@ -1012,12 +1010,12 @@ CREATE INDEX id_app_user_name ON `app_user`(`name`)
 加入索引前
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558108.png)
+ ![imgs202303181558108](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191648753.png)
 
 加入索引后
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558894.png)
+ ![imgs202303181558894](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191648395.png)
 
 ## 7.3、索引原则
 
@@ -1148,7 +1146,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 前提：满足第一第二范式
 
 
-确保数据表的每一列数据都和主键直接相关，而不能见解相关 ![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558125.png)
+确保数据表的每一列数据都和主键直接相关，而不能见解相关  ![imgs202303181558125](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191649001.png)
 
 # 10、
 
@@ -1159,7 +1157,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 ## 10.2、JDBC
 
 
-![img](https://raw.githubusercontent.com/1374412025/images/main/imgs202303181558674.png)
+ ![imgs202303181558674](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191649349.png)
 
 ## 10.3、第一个JDBC程序
 
