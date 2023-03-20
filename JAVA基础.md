@@ -170,7 +170,7 @@ integrated development environment
 
 new project 选择empty project
 
-![imgs202303181549415](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303201034448.png)
+![imgs202303181549415](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191640692.png)
 
 然后右键文件夹，点击新建module
 project——module——src——package——class
@@ -212,11 +212,7 @@ project——module——src——package——class
 
 **F2自动跳转下一个高亮错误或警告**
 
-
-
-
-
-##版本更新
+###版本更新
 
 - Java1.5 Java支持传递同类型的可变参数给一个方法
 - javaSE5   引入增强for，用于数组或者集合

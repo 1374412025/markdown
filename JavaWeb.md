@@ -310,6 +310,7 @@ Maven 的核心思想：**==约定大于配置==**
 
 配置如下配置:
 
+- ==M2_HOME maven目录下的bin目录==
 - ==MAVEN_HOME maven的目录==
 - ==在系统的path中配置 %MAVEN_HOME%\bin==
 
