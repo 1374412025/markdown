@@ -829,7 +829,7 @@ WHERE `pwd`='***'
 
 ## 4.8、select小节
 
-# 5、
+# 5、函数
 
 
 ## 5.1、常用函数
@@ -844,7 +844,7 @@ SELECT SIGN(99)
 
 --字串
 
-SELECT CHAR_LENGTH('沃日你麻痹')
+SELECT CHAR_LENGTH('只是')
 SELECT CONCAT('c','n','m')
 SELECT INSERT ('我是你爸爸',1,2,'操你妈的逼')
 SELECT LOWER('DSDDSADASF')
@@ -964,7 +964,7 @@ ROLLBACK;--回滚
 SET autocommit=1;--开启自动提交
 ```
 
-# 7、
+# 7、索引
 
 ## 7.1、索引的分类
 
@@ -1032,7 +1032,7 @@ Btree：InnoDB 的默认数据结构
 
 参考资料：https://blog.csdn.net/zq602316498/article/details/39323803
 
-# 8、
+# 8、管理数据库
 
 
 ## 8.1、用户管理
@@ -1092,7 +1092,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 
 把数据库给朋友，sql文件给比人即可！
 
-# 9、
+# 9、数据库设计
 
 
 ## 9.1、为什么要设计
@@ -1148,7 +1148,7 @@ mysql -u用户 -p密码  数据库名字<备份文件
 
 确保数据表的每一列数据都和主键直接相关，而不能见解相关  ![imgs202303181558125](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303191649001.png)
 
-# 10、
+# 10、JDBC
 
 ## 10.1、数据库驱动
 

@@ -175,7 +175,7 @@ new project 选择empty project
 然后右键文件夹，点击新建module
 project——module——src——package——class
 
-##IDEA快捷键
+##==IDEA快捷键==
 
 **psvm 	public static void main(String[] args){}**
 **a.sout**		
@@ -196,7 +196,6 @@ project——module——src——package——class
 **Ctrl + f查找**
 **Ctrl + W行尾选一行**
 **Ctrl + H** **打开继承树**
-**Ctrl + O** **重写方法**
 **Ctrl + Y 删除光标所在行 或 删除选中的行 ** 
 **Ctrl + Z 撤销 ** 
 **Ctrl+shift+Z 反撤销**
@@ -362,7 +361,7 @@ final double PI = 3.14
 
 ---------
 
-==**命名规范**==
+## ==**命名规范**==
 
 1. 所有变量、方法、类名：见名知意
 2. 类成员变量、局部变量、方法名：**首字母小写和驼峰原则**(单词首字母大写)lastName
@@ -1137,7 +1136,7 @@ static静态随着类加载而创建，时间片非常早
 抽象类abstract
 
 1. **不能被new实例化**，只能靠子类去实现他：约束！
-2. 抽象类中**可以写普通的方法**(包括构造方法)
+2. 抽象类中**可以写普通的方法**(包括构造方法)              
 3. **抽象方法必须在抽象类中**
 
 抽象的抽象：约束

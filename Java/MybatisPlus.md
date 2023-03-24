@@ -1,27 +1,11 @@
----
-layout:  post
-title:   狂神说 MybatisPlus 最全学习笔记 （整合个人学习经验）
-date:   22-05-04 20:13:30 修改
-author:  'zhangtao'
-header-img: 'img/post-bg-2015.jpg'
-catalog:   false
-tags:
--数据库持久层
--SpringBoot
--java
--数据库
-
----
 
 
-## Mybatis-Plus
+[TOC]
+
+# Mybatis-Plus
 
 
-
-
-
-
-### 前言
+## 前言
 
 需要的基础：Mybayis、Spring、SpringMVC
 
@@ -173,7 +157,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 <span class="token annotation punctuation">@NoArgsConstructor</span>
 <span class="token annotation punctuation">@ToString</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{
-       
+
       <!-- --></span>
     <span class="token keyword">private</span> <span class="token class-name">Long</span> id<span class="token punctuation">;</span>
     <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
@@ -197,14 +181,14 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 <span class="token punctuation">}</span>
 </code></pre>  
   7.  主启动类 注意：我们需要去主启动类上去扫描我们的mapper包下的所有接口 @MapperScan（com.shuang.mapper） <pre><code class="prism language-java"><span class="token comment">// 扫描mapper文件夹</span>
-<span class="token annotation punctuation">@MapperScan</span><span class="token punctuation">(</span><span class="token string">"com.shuang.mapper"</span><span class="token punctuation">)</span>
-<span class="token annotation punctuation">@SpringBootApplication</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MybatisPlusApplication</span> <span class="token punctuation">{
-       
+    <span class="token annotation punctuation">@MapperScan</span><span class="token punctuation">(</span><span class="token string">"com.shuang.mapper"</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@SpringBootApplication</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MybatisPlusApplication</span> <span class="token punctuation">{
+    
       <!-- --></span>
 
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{
-       
+    
       <!-- --></span>
         <span class="token class-name">SpringApplication</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token class-name">MybatisPlusApplication</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -213,7 +197,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 </code></pre>  
   7.  测试类 <pre><code class="prism language-java"><span class="token annotation punctuation">@SpringBootTest</span>
 <span class="token keyword">class</span> <span class="token class-name">MybatisPlusApplicationTests</span> <span class="token punctuation">{
-       
+    
       <!-- --></span>
 
     <span class="token comment">// 继承了BaseMapper，所有的方法都来自自己的父类，我们也可以编写自己的扩展方法</span>
@@ -222,7 +206,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
     <span class="token annotation punctuation">@Test</span>
     <span class="token keyword">void</span> <span class="token function">contextLoads</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{
-       
+    
       <!-- --></span>
         <span class="token comment">// 查询全部用户</span>
         <span class="token comment">// selectList(参数) 这里的参数是一个Wrapper，条件构造器，这里我们先不用，写个null占着</span>
@@ -414,7 +398,7 @@ private Date update_time;
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyMetaObjectHandler</span> <span class="token keyword">implements</span> <span class="token class-name">MetaObjectHandler</span> <span class="token punctuation">{
      
     <!-- --></span>
-
+    
     <span class="token comment">// 插入时的填充策略</span>
     <span class="token annotation punctuation">@Override</span>
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">insertFill</span><span class="token punctuation">(</span><span class="token class-name">MetaObject</span> metaObject<span class="token punctuation">)</span> <span class="token punctuation">{
@@ -718,19 +702,19 @@ public void testDeleteMap(){
 @TableLogic
 private Integer deleted;  
 3.  配置 <pre><code class="prism language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MybatisPlusConfig</span> <span class="token punctuation">{
-     
+  
     <!-- --></span>
     <span class="token comment">// 逻辑删除组件</span>
     <span class="token annotation punctuation">@Bean</span>
     <span class="token keyword">public</span> <span class="token class-name">ISqlInjector</span> <span class="token function">iSqlInjector</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{
-     
+    
     <!-- --></span>
         <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">LogicSqlInjector</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre> # 配置逻辑删除
-mybatis-plus.global-config.db-config.logic-delete-value= 1
-mybatis-plus.global-config.db-config.logic-not-delete-value= 0  
+  <span class="token punctuation">}</span>
+  </code></pre> # 配置逻辑删除
+  mybatis-plus.global-config.db-config.logic-delete-value= 1
+  mybatis-plus.global-config.db-config.logic-not-delete-value= 0  
 4.  测试一下删除 
 
 
@@ -770,10 +754,10 @@ MP也提供性能分析插件，如果超过这个时间就停止运行！
 1.  导入插件 <pre><code class="prism language-java"><span class="token comment">// SQL 执行效率插件</span>
 <span class="token annotation punctuation">@Bean</span>
 <span class="token annotation punctuation">@Profile</span><span class="token punctuation">(</span><span class="token punctuation">{
-     
+  
     <!-- --></span><span class="token string">"dev"</span><span class="token punctuation">,</span><span class="token string">"test"</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// 设置 dev  test 环境开启, 保证我们的效率</span>
 <span class="token keyword">public</span> <span class="token class-name">PerformanceInterceptor</span> <span class="token function">performanceInterceptor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{
-     
+  
     <!-- --></span>
     <span class="token class-name">PerformanceInterceptor</span> performanceInterceptor <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PerformanceInterceptor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">// 在工作中，不允许用户等待</span>
@@ -786,7 +770,7 @@ MP也提供性能分析插件，如果超过这个时间就停止运行！
 spring.profiles.active=dev  
 3.  测试使用 <pre><code class="prism language-java"><span class="token annotation punctuation">@Test</span>
 <span class="token keyword">void</span> <span class="token function">contextLoads</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{
-     
+  
     <!-- --></span>
     <span class="token comment">// 查询全部用户</span>
     <span class="token comment">// selectList(参数) 这里的参数是一个Wrapper，条件构造器，这里我们先不用，写个null占着</span>
