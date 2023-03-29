@@ -1,27 +1,30 @@
 [TOC]
 
+# 微服务阶段
 
 javase：OOP
 
 MySQL：持久化
 
-html+css+js+jquery+框架：视图，框架不熟练，css不好
+html+css+js+jquery+框架：**视图层**，框架不熟练，css不好
 
 javaweb：独立开发MVC三层架构的网站：原始
 
 ssm：框架：简化了我们的开发流程，配置也开始较为复杂；
 
-在此之前项目打包都是war包，程序在Tomcat中运行
+在此之前**项目打包都是war包，程序在Tomcat中运行**
 
-spring再简化：springBoot-jar包，内嵌Tomcat；微服务架构！ 服务越来越多：springCloud
+spring再简化：**springBoot-jar包，内嵌Tomcat**；微服务架构！ 
 
-# 一.HelloWorld
+服务越来越多：**springCloud**
+
+# 一.简介
 
 ## 1.1回顾什么是Spring
 
-Spring是一个开源框架，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
+Spring是一个**==开源框架==**，2003 年兴起的一个轻量级的Java 开发框架，作者：Rod Johnson 。
 
-**Spring是为了解决企业级应用开发的复杂性而创建的，简化开发。**
+**Spring是为了==解决企业级应用开发的复杂性而创建的，简化开发==。**
 
 Spring是如何简化Java开发的
 
@@ -37,23 +40,23 @@ Spring是如何简化Java开发的
 
 ## 1.2什么是SpringBoot
 
- 学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤；后来就用了框架Struts，再后来是SpringMVC，到了现在的SpringBoot，过一两年又会有其他web框架出现；你们有经历过框架不断的演进，然后自己开发项目所有的技术也在不断的变化、改造吗？建议都可以去经历一遍；
+ 学过javaweb的同学就知道，开发一个web应用，从最初开始接触Servlet结合Tomcat, 跑出一个Hello Wolrld程序，是要经历特别多的步骤；后来就用了框架**Struts**，再后来是SpringMVC，到了现在的**SpringBoot**，过一两年又会有其他**web框架**出现；你们有经历过框架不断的演进，然后自己开发项目所有的技术也在不断的变化、改造吗？建议都可以去经历一遍；
 
- 言归正传，什么是SpringBoot呢，**就是一个javaweb的开发框架**，和SpringMVC类似，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。
+ 言归正传，什么是SpringBoot呢，**就是一个==javaweb的开发框架==**，和**SpringMVC类似**，对比其他javaweb框架的好处，官方说是简化开发，约定大于配置， you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。
 
- 所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“约定大于配置”，进而衍生出一些一站式的解决方案。
+ 所有的技术框架的发展似乎都遵循了一条主线规律：从一个复杂应用场景 衍生 一种规范框架，人们只需要进行各种配置而不需要自己去实现它，这时候强大的配置功能成了优点；发展到一定程度之后，人们根据实际生产应用情况，选取其中实用功能和设计精华，重构出一些轻量级的框架；之后为了提高开发效率，嫌弃原先的各类配置过于麻烦，于是开始提倡“**约定大于配置**”，进而衍生出一些一站式的解决方案。
 
- 是的这就是Java企业级应用-&gt;J2EE-&gt;spring-&gt;springboot的过程。
+ 是的这就是**Java企业级应用-&gt;J2EE-&gt;spring-&gt;springboot**的过程。
 
  随着 Spring 不断的发展，涉及的领域越来越多，项目整合开发需要配合各种各样的文件，慢慢变得不那么易用简单，违背了最初的理念，甚至人称配置地狱。Spring Boot 正是在这样的一个背景下被抽象出来的开发框架，目的为了让大家更容易的使用 Spring 、更容易的集成各种常用的中间件、开源软件；
 
- Spring Boot 基于 Spring 开发，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用。
+ **Spring Boot 基于 Spring 开发**，Spirng Boot 本身并不提供 Spring 框架的核心特性以及扩展功能，只是用于快速、敏捷地开发新一代基于 Spring 框架的应用程序。也就是说，它并不是用来替代 Spring 的解决方案，而是和 Spring 框架紧密结合用于提升 Spring 开发者体验的工具。Spring Boot 以**约定大于配置的核心思想**，默认帮我们进行了很多设置，多数 Spring Boot 应用只需要很少的 Spring 配置。同时它集成了大量常用的第三方库配置（例如 Redis、MongoDB、Jpa、RabbitMQ、Quartz 等等），Spring Boot 应用中这些第三方库几乎可以零配置的开箱即用。
 
  简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架 。
 
  Spring Boot 出生名门，从一开始就站在一个比较高的起点，又经过这几年的发展，生态足够完善，Spring Boot 已经当之无愧成为 Java 领域最热门的技术。
 
-**Spring Boot的主要优点：**
+**Spring Boot的主要==优点：==**
 
 - 为所有Spring开发者更快的入门 
 - **开箱即用**，提供各种默认配置来简化项目配置 
@@ -66,21 +69,21 @@ Spring是如何简化Java开发的
 
  微服务是一种架构风格，他要求我们在开发一个应用的时候，这个应用必须建成一系列小服务组合，可以通过http方式进行通信。
 
- 所谓微服务加购，就是打破之前all in one的架构方式，把每个功能元素独立出来，把独立出来的功能元素的动态组合，需要的功能元素才去拿来组合，需要多一些可以整合多个功能元素，所以微服务架构是对功能元素进行赋值，而没有对整个应用进行复制，这样做的好处是：
+ 所谓微服务架构，就是打破之前**all in one**的架构方式，把每个功能元素独立出来，把独立出来的功能元素的动态组合，需要的功能元素才去拿来组合，需要多一些可以整合多个功能元素，所以微服务架构是对功能元素进行赋值，而没有对整个应用进行复制，这样做的好处是：
 
 - 节省了调用资源 
 - 每个功能元素的服务都是一个可替换的，可独立升级的软件代码
 
-程序核心：高内聚（在划分模块时，要把功能关系紧密的放到一个模块中） 低耦合（模块之间的联系越少越好，接口越简单越好）
+程序核心：**高内聚（在划分模块时，要把功能关系紧密的放到一个模块中） 低耦合（模块之间的联系越少越好，接口越简单越好）**
 
 论文地址：https://martinfowler.com/articles/microservices.html#CharacteristicsOfAMicroserviceArchitecture
 
 
 ![img](https://img-blog.csdnimg.cn/20210424204523940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxOTc4NTA5,size_16,color_FFFFFF,t_70)
 
-- 构建一个个功能独立的微服务应用单元，可以使用springboot，可以帮我们快速构建一个应用 
-- 大型分布式网络服务的调用，这部分springcloud来完成，实现分布式 
-- 在分布式中间，进行流式数据计算，批处理，我们有spring cloud data flow 
+- **构建一个个功能独立的微服务应用单元，可以使用springboot**，可以帮我们快速构建一个应用 
+- 大型**分布式网络服务的调用，这部分springcloud**来完成，实现分布式 
+- 在分布式中间，**进行流式数据计算，批处理，我们有spring cloud data flow** 
 - spring为我们想清楚了整个开始构建应用到大型分布式应用全流程方案
 
 
@@ -95,7 +98,7 @@ Spring是如何简化Java开发的
 我的环境准备：
 
 - java version “1.8.0_181” 
-- Maven-3.6.1 
+- Maven-3
 - SpringBoot 2.x 最新版
 
 开发工具：
@@ -130,67 +133,89 @@ Spring Initializr：https://start.spring.io/
 
 ②选择spring initalizr ， 可以看到默认就是去官网的快速构建工具那里实现
 
-③填写项目信息
+③填写项目信息(maven,jdk8,)
 
 ④选择初始化的组件（初学勾选 Web 即可）
 
 ⑤填写项目路径
 
 ⑥等待项目构建成功
+![image-20230325105941920](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303251059175.png)
+
+![image-20230325110019396](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303251100504.png)
+
+![image-20230325110055286](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303251100361.png)
 
 ### 2.3.3项目结构分析：
 
 通过上面步骤完成了基础项目的创建。就会自动生成以下文件。
 
-1、程序的主启动类（程序的主入口）
+1、**程序的主启动类（程序的主入口）**
 
-2、一个 application.properties 配置文件（SpringBoot的核心配置文件）
+2、一个 **application.properties 配置文件**（SpringBoot的核心配置文件）
 
-3、一个 测试类
+3、一个 **测试类**
 
 4、一个 pom.xml
 
 pom.xml文件分析： 打开pom.xml，看看Spring Boot项目的依赖：
 
 ```java
-<!-- 父依赖 -->
-<parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.2.5.RELEASE</version>
-    <relativePath/>
-</parent>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-<dependencies>
-    <!-- web场景启动器 -->
-    <dependency>
+    <!-- 有一个父项目 -->
+    <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <!-- springboot单元测试 -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-        <!-- 剔除依赖 -->
-        <exclusions>
-            <exclusion>
-                <groupId>org.junit.vintage</groupId>
-                <artifactId>junit-vintage-engine</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
-</dependencies>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.10</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
-<build>
-    <plugins>
-        <!-- 打包插件 -->
-        <plugin>
+    <!-- GAV坐标 -->
+    <groupId>com.jing</groupId>
+    <artifactId>helloworld</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    
+    <name>helloworld</name>
+    <description>Demo project for Spring Boot</description>
+    
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <!-- 依赖  -->
+    <dependencies>
+
+        <!-- spring-boot-starter 所有的springboot依赖都是使用这个开头 -->
+        <!-- web依赖,tomcat,dispotcherServlet,xml...  -->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-    </plugins>
-</build>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--  test依赖,单元测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    
+    <build>
+        <!--  打包插件 -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
 ```
 
 编写一个http接口
@@ -200,21 +225,17 @@ pom.xml文件分析： 打开pom.xml，看看Spring Boot项目的依赖：
 ```java
 @RestController
 public class HelloController {
-   
-
    @RequestMapping("/hello")
    public String hello() {
-   
        return "Hello World";
    }
-   
 }
 ```
 
 ③编写完毕后，从主程序启动项目，浏览器发起请求，看页面返回；控制台输出了 Tomcat 访问的端口号！
 
 
-![img](https://img-blog.csdnimg.cn/20210424204618304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxOTc4NTA5,size_16,color_FFFFFF,t_70)
+![img](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303251138737.png)
 
 更改端口号：在application资源文件中配置
 
@@ -222,31 +243,33 @@ public class HelloController {
 server.port = xxxx
 ```
 
+**banner彩蛋**,在resource文件下新建一个banner.txt,复制网上的banner生成器的结果,可以直接
+![image-20230325113824562](https://1374412025.oss-cn-beijing.aliyuncs.com/test/202303251138695.png)
+
 ## 2.3SpringBoot特点
 
 ### 2.3.1依赖管理
 
-- 父项目做依赖管理
+- pom.xml 父项目做依赖管理
 
-```java
+```xml
 依赖管理    
 <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.4.RELEASE</version>
-</parent>
+        <version>2.7.10</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
-他的父项目
+他的父项目  
  <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-dependencies</artifactId>
-    <version>2.3.4.RELEASE</version>
+    <version>2.7.10</version>
   </parent>
-
+我们在写或者引入一些SpringBoot依赖的时候,不需要指定版本,就因为有这些版本仓库
 几乎声明了所有开发中常用的依赖的版本号,自动版本仲裁机制
 ```
-
-- 开发导入starter场景启动器
 
 ```java
 1、见到很多 spring-boot-starter-* ： *就某种场景
@@ -297,7 +320,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot
      </dependency>
 ```
 
-自动配好SpringMVC
+- 自动配好SpringMVC
 
 -  引入SpringMVC全套组件  
 -  自动配好SpringMVC常用组件（功能）  
@@ -644,7 +667,7 @@ public class MyConfig {
 - 启动器：说白了就是Springboot的启动场景 
 - 比如spring-boot-starter-web，他就会帮我们自动导入web环境所有的依赖 
 - springboot会将所有的功能场景，都变成一个个的启动器 
-- 我们要使用什么功能，就值需要找到对应的启动器starter
+- 需要什么功能,就找对应的启动器就ok:  `*-starter-*`
 
 ## 3.2主程序
 
@@ -1551,7 +1574,7 @@ SpringBoot官方文档中有大量的配置，我们无法全部记住
 
 //Spring底层@Conditional注解
   //根据不同的条件判断，如果满足指定的条件，整个配置类里面的配置就会生效；
-  //这里的意思就是判断当前应用是否是web应用，如果是，当前配置类生效
+  //这里的意思就是判断当前m应用是否是web应用，如果是，当前配置类生效
 @ConditionalOnWebApplication(type = Type.SERVLET)
 
 //判断当前项目有没有这个类CharacterEncodingFilter；SpringMVC中进行乱码解决的过滤器；
@@ -4550,7 +4573,7 @@ xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro"
 - 了解Swagger的概念及作用 
 - 掌握在项目中集成Swagger自动生成API文档
 
-# 十三.Swagger
+# 十三.Swagger:接口文档
 
 ## 13.1Swagger简介
 
