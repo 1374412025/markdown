@@ -765,7 +765,8 @@ arrayRefVar= new dataType[arraySize]；//创建数组（堆中开辟）
   - `int[] nums = {1, 2, 3};`
   - `User[] users = {new User(), new User()};`
 - 动态初始化（声明、创建、默认赋值)
-  - `int[] arrayVar = new int[4];arrayVar[0]=1;`
+  - `int[] arrayVar = new int[4];`
+  - `arrayVar[0]=1;`
 - 默认初始化
 
 ## 数组使用
@@ -873,7 +874,7 @@ SparseArray
 **定义有参构造之前需要定义一个无参构造**（否则无参就没了）
 **ALT+Insert** 快捷键 选择**constructor**
 
-## new内存分析
+## ==new内存分析==
 
 
 栈	`oop.Demo02`
@@ -941,7 +942,6 @@ alt+Insert——override	快捷重写
 		ClassNotFoundException < Exception
 //无法被重写：
     //new是实例化过程,对非静态进行实例化,静态在声明的时候就加载
- 
     static	方法属于类，他不属于实例，无法重写
 	final 	常量池
 	private	方法私有不让重写
